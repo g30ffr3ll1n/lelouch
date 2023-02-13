@@ -1,10 +1,10 @@
 <template>
     <NavComponent>
         <div class="h-full w-full flex flex-col">
-            <div class="w-full flex py-8">
-                <div class="flex flex-col w-1/2 mt-20 pr-12">
-                    <h1 class="text-8xl font-semibold">Lorem ipsum dolor sit amet, consecteture</h1>
-                    <p class="text-2xl font-medium text-gray-500 pr-6 mt-6">Lorem ipsum dolor sit amet, consectetur
+            <div class="w-full flex lg:flex-row 2xs:flex-col py-8">
+                <div class="flex flex-col lg:w-1/2 2xs:w-full mt-20 pr-12">
+                    <h1 class="2xl:text-8xl xl:text-5xl lg:text-3xl 2xs:text-6xl font-semibold">Lorem ipsum dolor sit amet, consecteture</h1>
+                    <p class="2xl:text-2xl xl:text-xl lg:text-lg 2xs:text-xl font-medium text-[#636262] pr-6 mt-6">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore
                     </p>
@@ -19,29 +19,28 @@
                         </button>
                     </div>
                 </div>
-                <div class="w-1/2 image-stack">
+                <div class="lg:w-1/2 2xs:w-full image-stack lg:mt-0 2xs:mt-12 ">
                     <div class="image-stack__item image-stack__item--bottom">
-                        <img src="" alt="btm img" class="bg-gray-300 w-full h-full">
+                        <img src="" alt="btm img" class="bg-[#c4c4c4] w-full lg:h-full 2xs:h-[450px]">
                     </div>
                     <div class="image-stack__item image-stack__item--top">
-                        <img src="" alt="top img" class="bg-gray-400 w-[250px] h-[250px]">
+                        <img src="" alt="top img" class="bg-[#9d9d9d] w-[250px] h-[250px]">
                     </div>
                 </div>
             </div>
 
-            <div class="flex mt-20 pb-4">
-                <div class="h-[600px] flex flex-col w-1/3 pr-16">
+            <div class="flex lg:flex-row 2xs:flex-col mt-20 pb-4 lg:space-y-0 2xs:space-y-10">
+                <div class="lg:h-[600px] 2xs:h-content flex flex-col lg:w-1/3 2xs:w-full lg:pr-16 2xs:pr-0">
                     <p class="text-2xl font-bold">Header Text</p>
-                    <p class="text-gray-500 mt-4 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="text-[#636262] mt-4 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <div class="h-[600px] w-1/3">
-                    <img src="" class="h-[600px] w-full bg-gray-300">
+                <div class="lg:h-[600px] 2xs:h-[500px] lg:w-1/3 2xs:w-full">
+                    <img src="" class="lg:h-[600px] 2xs:h-[500px] w-full bg-[#c4c4c4]">
                 </div>
-                <div class="h-[600px] flex flex-col w-1/3 justify-end pl-16">
+                <div class="lg:h-[600px] 2xs:h-content flex flex-col lg:w-1/3 2xs:w-full lg:justify-end 2xs:justify-start lg:pl-16 2xs:pl-0">
                     <p class="text-2xl font-bold">Header Text</p>
-                    <p class="text-gray-500 mt-4 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur
+                    <p class="text-[#636262] mt-4 text-2xl font-medium">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
