@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-full bg-gray-100">
+    <div class="flex flex-col h-full bg-[#ffffff] overflow-y-auto">
         <header class="sticky top-0 z-30 w-full md:px-40 py-4 bg-white sm:px-4 shadow-xl h-20">
             <div class="flex items-center justify-between">
                 <a href="#">
@@ -7,10 +7,14 @@
                 </a>
                 <div class="flex items-center space-x-1">
                     <ul class="hidden space-x-2 md:inline-flex">
-                        <router-link to="/" class="px-4 py-2 font-semibold " active-class="active-route">Home</router-link>
-                        <router-link to="/about" class="px-4 py-2 font-semibold " active-class="active-route">About</router-link>
-                        <router-link to="/services" class="px-4 py-2 font-semibold " active-class="active-route">Services</router-link>
-                        <router-link to="/products" class="px-4 py-2 font-semibold " active-class="active-route">Products</router-link>
+                        <router-link to="/" class="px-4 py-2 font-semibold "
+                            active-class="active-route">Home</router-link>
+                        <router-link to="/about" class="px-4 py-2 font-semibold "
+                            active-class="active-route">About</router-link>
+                        <router-link to="/services" class="px-4 py-2 font-semibold "
+                            active-class="active-route">Services</router-link>
+                        <router-link to="/products" class="px-4 py-2 font-semibold "
+                            active-class="active-route">Products</router-link>
 
                     </ul>
                     <div class="inline-flex md:hidden">
@@ -34,17 +38,26 @@
             </div>
         </header>
 
-        <section class="h-full w-full py-4 px-40">
+        <section class="w-full py-4 px-40">
             <slot></slot>
         </section>
+
+        <Footer class="w-full pt-4 pb-12 px-40 footer-bg">
+
+            <FooterComponent></FooterComponent>
+        </Footer>
     </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
+import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
     name: 'NavComponent',
+    components: {
+        FooterComponent
+    },
     methods: {
         ...mapActions('auth', {
             logoutUser: 'logout'
@@ -56,5 +69,9 @@ export default {
 <style>
 .active-route {
     @apply text-blue-800;
+}
+
+.footer-bg {
+    background-image: linear-gradient(#ffffff 30%, #ececec 0%);
 }
 </style>

@@ -19,7 +19,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="flex w-1/2 image-stack">
+                <div class="w-1/2 image-stack">
                     <div class="image-stack__item image-stack__item--bottom">
                         <img src="" alt="btm img" class="bg-gray-300 w-full h-full">
                     </div>
@@ -47,26 +47,7 @@
                 </div>
             </div>
 
-            <div class="flex xl:flex-row sm:flex-col mt-20 pb-12">
-                <div class="h-[700px] w-1/2 pr-16">
-                    <img src="" class="h-[700px] bg-gray-300">
-                </div>
-                <div class="flex flex-col w-1/2 xl:pr-32 h-[700px]">
-                    <div class="flex h-1/2"></div>
-                    <div class="flex flex-col h-1/2">
-                        <p class="text-6xl font-semibold">Lorem ipsum dolor sit amet, consecteture</p>
-                        <p class="text-2xl font-medium text-gray-500 mt-6">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore
-                        </p>
-                        <div class="mt-12">
-                            <button class="flex rounded-lg bg-black text-gray-200 px-6 py-3 text-xl font-semibold">
-                                Call to Action
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
     </NavComponent>
